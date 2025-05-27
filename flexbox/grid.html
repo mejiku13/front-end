@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header akun"
+          "menu content iklans"
+          "footer footer footer";
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 2fr 17fr 1fr;
+        gap: 5px;
+        background-color: #2196F3;
+        padding: 5px;
+        height: 100vh;
+      }
+      .container > div.akun {
+        grid-area: akun;
+      }
+      .container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding : 10px;
+      }
+      .container > div.header {
+        grid-area: header;
+        text-align: center;
+      }
+      .container > div.menu {
+        grid-area: menu;
+      }
+      .container > div.content {
+        grid-area: content;
+      }
+      .container > div.iklan{
+        grid-area: iklans;
+      }
+      .container > div.footer {
+        grid-area: footer;
+      }
+    </style>
+    <title>GRID</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><h2>My Header</h2></div>
+      <div class="menu"><a href="#">Link 1</a><br><a href="#">Link 2</a><br><a href="#">Link 3</a></div>
+      <div class="content"><h3>contoh grid</h3>
+        <p>halo ini hanya contoh</p>
+        <center>
+          <button onclick="window.location.href='index.html'">Back</button>
+        </center>
+      </div>
+      <div class="footer"><h4>Footer</h4></div>
+      <div class="iklans"><h4>ini iklan</h4></div>
+      <div class="akun"><h3>akun</h3> </div>
+    </div>
+   
+  
+  
+  </body>
+</html>
